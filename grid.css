@@ -1,0 +1,125 @@
+
+/***************************************************
+*Main
+***************************************************/
+
+.gr-cont {
+	padding: 0 10px 0 10px; 
+	margin: 0 auto 0 auto;
+}
+
+img {
+	width: 100%;
+}
+
+/***************************************************
+*Media Queries
+***************************************************/
+
+@media (min-width: 1px) and (max-width: 767px) {
+	.gr-cont > [class^="gr-"] {
+		padding: 5px 0 5px 0;
+	}
+
+	.vis-mobile {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+
+	/***************************************************
+	*Cols
+	***************************************************/
+
+	.gr-cont > [class^="gr-"]{
+		float: left;
+		min-height: 1px;
+		padding: 0 10px 0 10px;
+		margin: 0 0 0 2%;
+	}
+
+	.gr-cont > [class^="gr-"]:first-child{
+		margin-left: 0;
+	}
+
+	.gr-cont > [class^="gr-"]:last-child{
+		float: right;
+	}
+
+
+	/***************************************************
+	*Columns are 65px wide ,width 20px gutter
+	***************************************************/
+
+	.gr-1 {
+		width: 6.5%;
+	}
+
+	.gr-2 {
+		width: 15%;
+	}
+
+	.gr-3 {
+		width: 23.5%
+	}
+
+	.gr-4 {
+		width: 32%;
+	}
+
+	.gr-5 {
+		width: 40.5%
+	}
+
+	.gr-6 {
+		width: 49%;
+	}
+
+	.gr-7 {
+		width: 57.5%;
+	}
+
+	.gr-8 {
+		width: 66%;
+	}
+
+	.gr-9 {
+		width: 74.5%;
+	}
+
+	.gr-10 {
+		width: 83%;
+	}
+
+	.gr-11 {
+		width: 91.5%;
+	}
+
+	.gr-12 {
+		width: 100%;
+	}
+
+	/***************************************************
+	*Clearfix
+	***************************************************/
+
+	.cf:before,
+	.gr-cont::after,
+	.cf:after {
+    	content: " "; /* 1 */
+    	display: table; /* 2 */
+	}
+
+	.gr-cont::after,
+	.cf:after {
+    	clear: both;
+	}
+
+}
+
+@media (min-width: 1200px) {
+	.gr-cont {
+		max-width: 1100px;
+	}
+}
